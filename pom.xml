@@ -11,7 +11,7 @@
 
 	<groupId>com.github.catstiger</groupId>
 	<artifactId>catstiger-anything</artifactId>
-	<version>0.0.7</version>
+	<version>0.0.8</version>
 	<name>Catstiger Model Builder</name>
 	<packaging>jar</packaging>
 
@@ -27,18 +27,24 @@
 		<dependency>
 			<groupId>com.github.catstiger</groupId>
 			<artifactId>catstiger-common</artifactId>
-			<version>0.0.7</version>
+			<version>0.0.8</version>
 		</dependency>
 		
 		<dependency>
 			<groupId>com.github.catstiger</groupId>
 			<artifactId>catstiger-multipart</artifactId>
-			<version>0.0.7</version>
+			<version>0.0.8</version>
 		</dependency>
 		<dependency>
 			<groupId>com.github.catstiger</groupId>
 			<artifactId>catstiger-modules-api</artifactId>
-			<version>0.0.7</version>
+			<version>0.0.8</version>
+		</dependency>
+		<!-- Test -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
 		</dependency>
 		
 	</dependencies>
