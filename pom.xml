@@ -2,7 +2,11 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-
+	<properties>
+		<java.version>1.8</java.version>
+		<catstiger.version>0.0.8</catstiger.version>
+	</properties>
+	
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
@@ -11,13 +15,9 @@
 
 	<groupId>com.github.catstiger</groupId>
 	<artifactId>catstiger-anything</artifactId>
-	<version>0.0.8</version>
+	<version>${catstiger.version}</version>
 	<name>Catstiger Model Builder</name>
 	<packaging>jar</packaging>
-
-	<properties>
-		<java.version>1.8</java.version>
-	</properties>
 
 	<dependencies>
 		<dependency>
@@ -27,18 +27,18 @@
 		<dependency>
 			<groupId>com.github.catstiger</groupId>
 			<artifactId>catstiger-common</artifactId>
-			<version>0.0.8</version>
+			<version>${catstiger.version}</version>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>com.github.catstiger</groupId>
 			<artifactId>catstiger-multipart</artifactId>
-			<version>0.0.8</version>
+			<version>${catstiger.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>com.github.catstiger</groupId>
 			<artifactId>catstiger-modules-api</artifactId>
-			<version>0.0.8</version>
+			<version>${catstiger.version}</version>
 		</dependency>
 		<!-- Test -->
 		<dependency>
@@ -46,9 +46,9 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-		
+
 	</dependencies>
-	
+
 	<distributionManagement>
 		<repository>
 			<id>rdc-releases</id>
