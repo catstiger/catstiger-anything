@@ -33,7 +33,7 @@ public class CodeController extends BaseController {
   private JdbcTemplateProxy jdbcTemplate;
   @Autowired
   private CodeService codeService;
-  @Autowired
+  @Autowired(required = false)
   private FileService fileService;
   
   /**
